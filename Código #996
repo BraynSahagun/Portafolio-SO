@@ -1,0 +1,69 @@
+Arbol:
+#!bin/bash
+
+mkdir Directorio
+mkdir Directorio/dos
+mkdir Directorio/seis
+mkdir Directorio/tres
+mkdir Directorio/tres/cuatro
+mkdir Directorio/tres/cuatro/cinco
+touch Directorio/seis/holamundo.sh
+touch Directorio/seis/holanombre.sh
+touch Directorio/tres/file3.txt
+mkdir Directorio/uno
+touch Directorio/uno/test.txt
+bash Directorio/seis/holamundo.sh
+bash Directorio/seis/holanombre.sh
+
+------------------------------------------------------------------------------
+
+Hola Mundo:
+#!/bin/bash
+
+echo -e "\033[40m\033[36m Este Script te dice: \033[0m"
+echo -e "\033[40m\033[36m \nHola Mundo \033[0m"
+
+-------------------------------------------------------------------------------
+Saludo con Variable:
+#!/bin/bash
+
+echo -n "Ingresa tu nombre: "
+NAME=""
+read NAME
+echo -e "Hola, ${NAME} "
+
+--------------------------------------------------------------------------------
+Menu:
+#!/bin/bash
+SCRIPT=""
+
+while true
+do
+      echo -e "\033[40m\033[34m MENU \033[0m"
+      banner MENU  
+      echo -e "1.-"\033[40m\033[1;33m Hola mundo \033[0m"
+      echo -e "2.-"\033[40m\033[1;33m Hola mundo con variables \033[0m"
+      echo -e "3.-"\033[40m\033[1;33m Arbol \033[0m"
+      echo -e "x.-"\033[40m\033[37m Salir \033[0m\n"
+
+      echo -n "Selecciona un Script: "
+      read SCRIPT
+
+      case ${SCRIPT} in
+      1)
+              source Hola_Mundo.sh
+              ;;
+      2)
+              source Saludo_Con_Variable.sh
+              ;;
+      3)
+              source Arbol
+              ;;
+      x)
+              break
+              ;;
+      *)
+              echo "Opcion invalida"
+      esac
+done
+
