@@ -1,0 +1,14 @@
+#!/bin/bash
+mkdir Directorio
+mkdir Directorio/dos
+mkdir Directorio/seis
+mkdir Directorio/tres
+mkdir Directorio/tres/cuatro
+mkdir Directorio/tres/cuatro/cinco
+touch Directorio/seis/holamundo.sh
+touch Directorio/seis/holanombre.sh
+touch Directorio/tres/file3.txt
+mkdir Directorio/uno
+touch Directorio/uno/test.txt
+bash Directorio/seis/holamundo.sh
+bash Directorio/seis/holanombre.sh
